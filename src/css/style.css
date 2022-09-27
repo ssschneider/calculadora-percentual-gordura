@@ -1,0 +1,88 @@
+body {
+    background: #005AA7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #6DD5FA, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #6DD5FA, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 50px 0 20px;
+}
+
+label, input, a {
+    font-size: 2rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+label {
+    padding: 15px 0 5px;
+}
+
+input {
+    border-radius: 30px;
+    color: #545454;
+    padding: 10px;
+    border: 0px;
+    font-weight: 300;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    outline: none;
+}
+
+a {
+    text-align: center;
+    margin-top: 30px;
+    background-color: #005AA7;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s ease-in-out;
+}
+
+a:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+div.resultado, div.resultado p, div.resultado span {
+    display: none;
+}
+
+div.resultado.mostrar {
+    display: block;
+    backdrop-filter: blur(4px) saturate(143%);
+    -webkit-backdrop-filter: blur(4px) saturate(143%);
+    background-color: rgba(255, 253, 228, 0.6);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px;
+    position: absolute;
+    align-self: center;
+}
+
+
+div.resultado.mostrar p, div.resultado.mostrar span {
+    color: #005AA7;
+    font-size: 2rem;
+    display: flex;
+}
+
+div.resultado.mostrar p {
+    margin: 10px;
+}
+
+div.resultado.mostrar span {
+    padding: 0 5px;
+}

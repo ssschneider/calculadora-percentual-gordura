@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Calculadora de Percentual de Gordura, Massa Magra e Massa Gorda">
+    <meta name="keywords" content="massa magra, massa gorda, %gordura, dobras cutâneas">
+
+    <title>Calculadora de Dados Corporais</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+
+</head>
+<body>
+    <main>
+        <h1>Calcule o seu %Gordura agora!</h1>
+
+        <label for="peso">Peso (kg)</label>
+        <input type="text" id="peso" placeholder="Ex: 67.5" required>
+
+        <label for="idade">Idade (anos)</label>
+        <input type="text" id="idade" placeholder="Ex: 22" required>
+
+        <label for="triceps">Dobra cutânea do tríceps (mm)</label>
+        <input type="text" id="triceps" placeholder="Ex: 20" required>
+
+        <label for="suprailiaca">Dobra cutânea suprailíaca (mm)</label>
+        <input type="text" id="suprailiaca" placeholder="Ex: 18" required>
+
+        <label for="coxa">Dobra cutânea da coxa (mm)</label>
+        <input type="text" id="coxa" placeholder="Ex: 22" required>
+
+        <a href="#" id="btn">Calcular seu %Gordura</a>
+
+        <div class="resultado" id="resultado">
+            <p>Seu % de gordura é: <span id="percentual-gordura"></span> %</p>
+            <p>Sua massa magra é: <span id="massa-magra"></span> kg</p>
+            <p>Sua massa gorda é: <span id="massa-gorda"></span> kg</p>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>

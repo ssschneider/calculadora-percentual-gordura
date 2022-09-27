@@ -1,0 +1,17 @@
+@media (max-width: 425px) {
+    body {
+        height: fit-content;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    a {
+        margin-bottom: 50px;
+    }
+}
